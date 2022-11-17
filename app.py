@@ -30,7 +30,8 @@ def choose_model(model):
 def classification_method(selection):
     model = choose_model(selection)
     # load the image 
-    image = load_img(os.path.join(uploaded_file.name), target_size = (224, 224))
+    # image = load_img(os.path.join(uploaded_file.name), target_size = (224, 224))
+    image = load_img(uploaded_file.name, target_size = (224, 224))
     # convert the image to an array
     image = img_to_array(image)
     # expand the dimensions to include the batch
