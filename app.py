@@ -2,7 +2,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import tensorflow as tf
-import cv2
 import os
 
 from tensorflow.keras.applications import (
